@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="DroneGui">
+  <grid id="27dc6" binding="panel1" layout-manager="FormLayout">
+    <rowspec value="center:d:noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <colspec value="fill:d:noGrow"/>
+    <colspec value="left:4dlu:noGrow"/>
+    <colspec value="fill:max(d;4px):noGrow"/>
+    <colspec value="left:4dlu:noGrow"/>
+    <colspec value="fill:max(d;4px):noGrow"/>
+    <constraints>
+      <xy x="20" y="20" width="2582" height="1126"/>
+    </constraints>
+    <properties>
+      <autoscrolls value="false"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="6e74a" binding="powerPanel" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="50" left="25" bottom="75" right="25"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <forms top="2" left="2" bottom="2" right="2"/>
+        </constraints>
+        <properties>
+          <background color="-524292"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <toolbar id="8603f" binding="infoToolBar">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="-1" height="20"/>
+              </grid>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="6f45c" class="javax.swing.JButton" binding="infoButton">
+                <constraints/>
+                <properties>
+                  <icon value="info.jpg"/>
+                  <iconTextGap value="0"/>
+                  <label value=""/>
+                  <maximumSize width="94" height="66"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="2a027" class="javax.swing.JButton" binding="helpButton">
+                <constraints/>
+                <properties>
+                  <icon value="instructions.jpg"/>
+                  <iconTextGap value="0"/>
+                  <label value=""/>
+                  <maximumSize width="94" height="66"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="729dd" class="javax.swing.JButton" binding="windButton" default-binding="true">
+                <constraints/>
+                <properties>
+                  <icon value="209-2092444_simple-weather-icons2-partly-cloudy-weather-symbol-partly.jpg"/>
+                  <iconTextGap value="0"/>
+                  <maximumSize width="94" height="68"/>
+                  <text value="Wind"/>
+                </properties>
+              </component>
+            </children>
+          </toolbar>
+          <toolbar id="9ef4e" binding="altToolbar">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="-1" height="20"/>
+              </grid>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="71ce8" class="javax.swing.JButton" binding="altButton" default-binding="true">
+                <constraints/>
+                <properties>
+                  <icon value="alt.jpg"/>
+                  <iconTextGap value="0"/>
+                  <inheritsPopupMenu value="true"/>
+                  <label value=""/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="223e9" class="javax.swing.JButton" binding="speedButton">
+                <constraints/>
+                <properties>
+                  <icon value="speed.jpg"/>
+                  <iconTextGap value="0"/>
+                  <maximumSize width="94" height="68"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="cc317" class="javax.swing.JButton" binding="CameraButton">
+                <constraints/>
+                <properties>
+                  <icon value="CameraIcon.jpg"/>
+                  <label value=""/>
+                  <text value=""/>
+                </properties>
+              </component>
+            </children>
+          </toolbar>
+          <vspacer id="22045">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+        </children>
+      </grid>
+      <grid id="6e2f7" binding="cameraPanel" custom-create="true" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="480" left="650" bottom="400" right="15"/>
+        <constraints>
+          <grid row="0" column="2" row-span="3" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false" defaultalign-vert="false"/>
+        </constraints>
+        <properties>
+          <autoscrolls value="false"/>
+          <background color="-16309695"/>
+          <inheritsPopupMenu value="false"/>
+        </properties>
+        <border type="bevel-lowered"/>
+        <children/>
+      </grid>
+      <grid id="83edb" binding="throttlePanel" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="0" row-span="2" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <background color="-16309695"/>
+        </properties>
+        <border type="bevel-raised" title-justification="2"/>
+        <children>
+          <component id="22c61" class="javax.swing.JSlider" binding="slider1" default-binding="true">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-9000261"/>
+            </properties>
+          </component>
+          <component id="f8199" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-524292"/>
+              <text value="Throttle"/>
+            </properties>
+          </component>
+          <component id="1fec1" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-524292"/>
+              <text value="Toggle"/>
+            </properties>
+          </component>
+          <component id="3a89f" class="javax.swing.JSlider" binding="slider2" default-binding="true">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-9000261"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="9a705" binding="joyStickPanel" layout-manager="GridLayoutManager" row-count="3" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+        <margin top="10" left="10" bottom="10" right="10"/>
+        <constraints>
+          <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <background color="-16309695"/>
+        </properties>
+        <border type="bevel-raised"/>
+        <children>
+          <component id="86a6b" class="javax.swing.JButton" binding="moveDownButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <icon value="download (1).png"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="dd690" class="javax.swing.JButton" binding="moveRightButton" default-binding="true">
+            <constraints>
+              <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <icon value="right arrow (1).jpg"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="eb6da" class="javax.swing.JButton" binding="moveLeftButton" default-binding="true">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <icon value="left arroe (1).jpg"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <hspacer id="42b6">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <vspacer id="45961">
+            <constraints>
+              <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <component id="4dfa1" class="javax.swing.JButton" binding="moveUpButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <icon value="up-arrow-icon-futuristic-blue-round-button-vector-illustration-isolated-156513479 (1).jpg"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <hspacer id="9b977">
+            <constraints>
+              <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <hspacer id="baeaa">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <hspacer id="d2ed6">
+            <constraints>
+              <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+        </children>
+      </grid>
+      <grid id="cdc06" layout-manager="GridLayoutManager" row-count="5" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="4" row-span="2" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <background color="-524292"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="a8638" class="javax.swing.JLabel" binding="timeOfFlight">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <icon value="clock (1).jpg"/>
+              <text value="Time of FLight"/>
+            </properties>
+          </component>
+          <component id="45be3" class="javax.swing.JProgressBar" binding="BatteryIndicator">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="2" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-12076194"/>
+              <indeterminate value="false"/>
+              <string value="30%"/>
+              <stringPainted value="true"/>
+              <value value="30"/>
+            </properties>
+          </component>
+          <component id="ae85c" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Consolas" size="14" style="1"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="4"/>
+              <text value="Battery"/>
+            </properties>
+          </component>
+          <vspacer id="c756e">
+            <constraints>
+              <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <vspacer id="d342c">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+        </children>
+      </grid>
+      <grid id="e6e99" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children/>
+      </grid>
+    </children>
+  </grid>
+</form>
